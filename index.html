@@ -14,18 +14,53 @@
       href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
     <style>
       .bb-col {
-        border: 1px dotted red;
+        border: 1px dotted gold;
       }
       .bb-row {
-        border: 1px dotted green;
+        border: 1px dotted blue;
       }
     </style>
     <title>Trivia Game</title>
   </head>
   <body>
+    <div class="container">
+      <div class="b-row row header">
+        <div class="col-md-12 text center">
+          <h1>Disney Trivia Game</h1>
+        </div>
+      </div>
+    </div>
+    <div class="b-row row status-area">
+      <div class="b-col mr-auto"></div>
+      <div class="b-col col-sm-4 col-md-2 timertext">Time Remaining:</div>
+      <div class="b-col col-md-1 col-sm-2 timer"></div>
+      <div class="b-col mr-auto timerblank"></div>
+      <div class="b-col col-md-4">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 statustext">Questions Left</div>
+          <div class="col-md-6 col-sm-6 questions"></div>
+        </div>
+        <div class="row results">
+          <div class="col-md-6 col-sm-6 status text">Correct:</div>
+          <div class="col-md-6 col-sm-6 correct"></div>
+          <div class="col-md-6 col-sm-6 statustext">Wrong:</div>
+          <div class="col-md-6 col-sm-6 incorrect"></div>
+        </div>
+      </div>
+      <div class="b-row row question-area">
+        <div class="col-md-7 mx-auto">
+          <button type="button" class="btn btn-secondary restart-button">
+            Restart
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -42,6 +77,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/app.js"></script>
   </body>
 </html>
