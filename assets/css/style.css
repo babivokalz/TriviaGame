@@ -28,3 +28,70 @@ h1 {
   padding-bottom: 20px;
   background-color: rgba(250, 250, 250, 0.15);
 }
+
+.timertext {
+  padding-top: 15px;
+  color: purple;
+  background-color: rgba(250, 250, 250, 0.15);
+}
+
+.timer {
+  padding-top: 15px;
+  color: purple;
+  background-color: rgba(250, 250, 250, 0.15);
+}
+
+.questions,
+.correct,
+.incorrect,
+.statustext {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: white;
+  color: purple;
+}
+
+th {
+  padding-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+td {
+  color: #aaa;
+  padding: 15px;
+}
+
+.card-body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #222;
+}
+
+.card-text {
+  line-height: 30px;
+  color: #222;
+}
+
+.start-img {
+  background-image: url("../images/disneyFriends.jpeg");
+  display: block;
+  height: 500px;
+  background-position: center 780px;
+  margin-top: -30px;
+  opacity: 0.75;
+}
+
+.start-area {
+  padding-bottom: 20px;
+}
+
+.start-button {
+  position: relative;
+  top: -70px;
+}
