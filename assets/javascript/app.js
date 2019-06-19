@@ -213,7 +213,7 @@ function printStatus(flag) {
     $("ul").append("<li>Incorrect Answers: " + countWrong + "</li>");
     $("ul").append("<li>Unanswered: " + countUnanswered + "</li>");
 
-    $(".status-area").hide();
+    $(".status-area").show();
     $(".restart-area").show();
   }
 }
@@ -289,9 +289,9 @@ function updateStatus() {
 
 function startPage() {
   $(".start-area").show();
-  $(".status-area").hide();
-  $(".question-area").hide();
-  $(".restart-area").hide();
+  $(".status-area").show();
+  $(".question-area").show();
+  $(".restart-area").show();
 }
 
 function resetQuestionDisplay() {
@@ -359,7 +359,7 @@ function printQuestions() {
   }
 }
 function startGame() {
-  $(".start-area").hide();
+  $(".start-area").show();
   $(".status-area").show();
   $(".question-area").show();
 
