@@ -314,49 +314,49 @@ function printQuestions() {
 
   resetQuestionDisplay();
 
-  while (questionCount < questions.length) {
-    randomQue = Math.floor(math.random() * questions.length);
+  // while (questionCount < questions.length) {
+  //   randomQue = Math.floor(Math.random() * questions.length);
 
-    if (!questions[randomQue].isAnswered) {
-      break;
-    }
-  }
+  //   if (!questions[randomQue].isAnswered) {
+  //     break;
+  //   }
+  // }
 
-  if (questionCount < questions.length) {
-    if (!questions[randomQue].isAnswered) {
-      $("table")
-        .append("<thead>")
-        .append("<tbody>");
-      $("thead").append("<tr>");
-      $("tr").append("<th>");
-      $("th").text(questions[randomQue].question);
-      questions[randomQue].isAnswered = true;
+  // if (questionCount < questions.length) {
+  //   if (!questions[randomQue].isAnswered) {
+  //     $("table")
+  //       .append("<thead>")
+  //       .append("<tbody>");
+  //     $("thead").append("<tr>");
+  //     $("tr").append("<th>");
+  //     $("th").text(questions[randomQue].question);
+  //     questions[randomQue].isAnswered = true;
 
-      while (answerCount < questions[randomQue].answerChoices.length);
-      if (!questions[randomQue].answerChoices[randomAns].isUsed) {
-        answerCount++;
+  //     while (answerCount < questions[randomQue].answerChoices.length);
+  //     if (!questions[randomQue].answerChoices[randomAns].isUsed) {
+  //       answerCount++;
 
-        var answerTr = $("<tr>");
-        var answerTd = $("<td>").text(
-          preNumToChar(answerCount) +
-            ": " +
-            questions[randomQue].answerChoices[randomAns].answer
-        );
+  //       var answerTr = $("<tr>");
+  //       var answerTd = $("<td>").text(
+  //         preNumToChar(answerCount) +
+  //           ": " +
+  //           questions[randomQue].answerChoices[randomAns].answer
+  //       );
 
-        if (questions[randomQue].answerChoices[randomAns].value) {
-          answerTd.attr("value", "true");
-          answerTd.attr("index", randomQue);
-          answerTd.attr("class", "answer answer-right");
-        } else {
-          answerTd.attr("class", "answer answer-wrong");
-        }
+  //       if (questions[randomQue].answerChoices[randomAns].value) {
+  //         answerTd.attr("value", "true");
+  //         answerTd.attr("index", randomQue);
+  //         answerTd.attr("class", "answer answer-right");
+  //       } else {
+  //         answerTd.attr("class", "answer answer-wrong");
+  //       }
 
-        answerTr.append(answerTd);
-        $("tbody").append(answerTr);
-        questions[randomQue].answerChoices[randomAns].isUsed = true;
-      }
-    }
-  }
+  //       answerTr.append(answerTd);
+  //       $("tbody").append(answerTr);
+  //       questions[randomQue].answerChoices[randomAns].isUsed = true;
+  //     }
+  //   }
+  // }
 }
 function startGame() {
   $(".start-area").show();
